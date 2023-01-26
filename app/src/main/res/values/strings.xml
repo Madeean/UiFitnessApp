@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FitnessApp1</string>
+
+    <string name="privacy_poilicy"><u>Privacy Policy</u> and <u>Term of Use</u></string>
+
 </resources>
