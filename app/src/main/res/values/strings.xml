@@ -2,5 +2,11 @@
     <string name="app_name">FitnessApp1</string>
 
     <string name="privacy_poilicy"><u>Privacy Policy</u> and <u>Term of Use</u></string>
+    <string name="forgot_your_password"><i>Forgot your password?</i></string>
+
+    <string-array name="gender">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
 
 </resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CompleteRegisterPage">
+
+        <ImageView
+            android:id="@+id/iv_register_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_lets"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_boldd"
+            android:textColor="@color/hitam"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_register_complete"
+            tools:text="Let's complete your profile" />
+
+        <TextView
+            android:id="@+id/tv_it_will"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/coklatTua"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lets"
+            tools:text="It will help us to know more about you!" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:background="@drawable/et_firstname_register"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tiGender"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose Gender"
+            app:hintTextColor="@color/coklatMuda"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_it_will">
+
+            <AutoCompleteTextView
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:background="@drawable/et_firstname_register"
+                app:hintTextColor="@color/coklatMuda"
+                android:textSize="12sp"
+                android:drawableStart="@drawable/gender"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:id="@+id/acGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:hint="Choose Gender">
+
+            </AutoCompleteTextView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/et_date_of_birth"
+            android:textColorHint="@color/coklatMuda"
+            android:padding="15dp"
+            android:background="@drawable/et_firstname_register"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_outline_email_24"
+            android:hint="Email"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tiGender" />
+
+        <EditText
+            android:id="@+id/your_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/et_firstname_register"
+            android:drawableStart="@drawable/ic_baseline_height_24"
+            android:drawablePadding="10dp"
+            android:hint="Your Height"
+            android:padding="15dp"
+            android:textColorHint="@color/coklatMuda"
+            app:layout_constraintTop_toBottomOf="@+id/et_date_of_birth" />
+
+        <TextView
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/tv_cm"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/penjelas_complete_regis"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="15dp"
+            android:text="CM"
+            android:textColor="@color/putih"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.241"
+            app:layout_constraintStart_toEndOf="@+id/your_height"
+            app:layout_constraintTop_toBottomOf="@+id/et_date_of_birth" />
+
+        <EditText
+            android:id="@+id/your_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/et_firstname_register"
+            android:drawableStart="@drawable/ic_outline_monitor_weight_24"
+            android:drawablePadding="10dp"
+            android:hint="Your weight"
+            android:padding="15dp"
+            android:textColorHint="@color/coklatMuda"
+            app:layout_constraintTop_toBottomOf="@+id/your_height" />
+
+        <TextView
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/tv_kg"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/penjelas_complete_regis"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="15dp"
+            android:text="KG"
+            android:textColor="@color/putih"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.241"
+            app:layout_constraintStart_toEndOf="@+id/your_height"
+            app:layout_constraintTop_toBottomOf="@+id/your_height" />
+
+        <com.omega_r.libs.OmegaCenterIconButton
+            android:id="@+id/btn_next_complete"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button_get_started"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/putih"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/your_weight" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

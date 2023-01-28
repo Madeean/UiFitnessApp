@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <Button
+    <com.omega_r.libs.OmegaCenterIconButton
         android:id="@+id/btn_get_started"
         android:lineSpacingExtra="24sp"
         android:lineSpacingMultiplier="24"
