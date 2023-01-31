@@ -14,6 +14,9 @@
         android:theme="@style/Theme.FitnessApp1"
         tools:targetApi="31">
         <activity
+            android:name=".SliderAfterRegisterPage"
+            android:exported="false" />
+        <activity
             android:name=".CompleteRegisterPage"
             android:exported="false" />
         <activity
